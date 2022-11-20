@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,10 +9,11 @@
   <link rel="stylesheet" href="style.css">
   <script src="./scripts.js"></script>
 </head>
+
 <body>
   <div class="players-time-game">
-    <h4 class="active" id="player-1">Player 1</h4>
-    <h4 id="player-2">Player 2</h4>
+    <div class="player active" id="player-1"><span>Player 1</span></div>
+    <div class="player" id="player-2"><span>Player 2</span></div>
   </div>
   <div class="game">
     <div class="col">
@@ -19,7 +21,7 @@
       <div class="row" id="row-2" onclick="choseRow('2')"></div>
       <div class="row" id="row-3" onclick="choseRow('3')"></div>
     </div>
-    
+
     <div class="col">
       <div class="row" id="row-4" onclick="choseRow('4')"></div>
       <div class="row" id="row-5" onclick="choseRow('5')"></div>
@@ -33,5 +35,20 @@
     </div>
   </div>
   <div id="resultado"></div>
+  <div id="percentWinners">
+    <div>
+      <h3>Player 1</h3>
+      <h6>Vitorias</h6>
+      <span id="percentWinnerPlayerOne"></span>
+      <h6>Derrotas</h6>
+      <span id="percentLosePlayerOne"></span>
+    </div>
+    <div>
+      <h3>Player 2</h3>
+      <span id="percentWinnerPlayerTwo"></span>
+      <span id="percentLosePlayerTwo"></span>
+    </div>
+  </div>
 </body>
+
 </html>
