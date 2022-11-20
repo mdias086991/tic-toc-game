@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.game {
+  border: 1px solid #c5c5c5;
+  height: 50vh;
+  width: 50vh;
+  margin: auto;
+  display: flex;
+  padding: 20px;
+}
+.col {
+  height: 100%;
+  width: 33%;
+}
+
+.col:nth-child(2) {
+  border-left:1px solid black;
+  border-right: 1px solid black; 
+}
+
+.row {
+  border-bottom: 1px solid black;
+  height: 33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row:nth-child(3) {
+  border: none;
+}

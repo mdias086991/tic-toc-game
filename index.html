@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo da Velha</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="./scripts.js"></script>
+</head>
+<body>
+  <div class="players-time-game">
+    <h4 class="active" id="player-1">Player 1</h4>
+    <h4 id="player-2">Player 2</h4>
+  </div>
+  <div class="game">
+    <div class="col">
+      <div class="row" id="row-1" onclick="choseRow('1')"></div>
+      <div class="row" id="row-2" onclick="choseRow('2')"></div>
+      <div class="row" id="row-3" onclick="choseRow('3')"></div>
+    </div>
+    
+    <div class="col">
+      <div class="row" id="row-4" onclick="choseRow('4')"></div>
+      <div class="row" id="row-5" onclick="choseRow('5')"></div>
+      <div class="row" id="row-6" onclick="choseRow('6')"></div>
+    </div>
+
+    <div class="col">
+      <div class="row" id="row-7" onclick="choseRow('7')"></div>
+      <div class="row" id="row-8" onclick="choseRow('8')"></div>
+      <div class="row" id="row-9" onclick="choseRow('9')"></div>
+    </div>
+  </div>
+  <div id="resultado"></div>
+</body>
+</html>
